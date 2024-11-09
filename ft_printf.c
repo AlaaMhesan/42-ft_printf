@@ -26,9 +26,9 @@ int ft_printf(const char *str, ...)
 	return(counter);
 }
 
-int	main()
-{
-	int	result;
-	result = printf("Alaa akram almhesan");
-	printf("%d number of ch\n", result );
-}
+// int	main()
+// {
+// 	int	result;
+// 	result = printf("Alaa akram almhesan");
+// 	printf("%d number of ch\n", result );
+// }
