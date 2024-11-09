@@ -1,13 +1,5 @@
 #include "ft_printf.h"
 
-/*int	main()
-{
-    int result = printf("Sentence to know how many %s\n", "characters were written");
-    
-    printf("%d characters were written", result);
-}
-*/
-
 int ft_printf(const char *str, ...)
 {
 	va_list	arg;
@@ -21,7 +13,7 @@ int ft_printf(const char *str, ...)
 	{
 		if(str[i] == '%')
 		{
-			counter += ft_format(str[i++], arg);
+			counter += ft_type(str[i++], arg);
 			i++;	
 		}
 		else
