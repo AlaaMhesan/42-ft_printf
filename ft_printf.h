@@ -7,7 +7,7 @@
 
 int     ft_printf(const char *str, ...);
 
-int ft_type(char c, va_list arg);
+int     ft_type(char c, va_list arg);
 int     ft_putchar(char c);
 int     ft_strlen(char *str);
 int ft_putstr(char *s);

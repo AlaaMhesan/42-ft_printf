@@ -6,13 +6,15 @@ int    ft_putnum(int n)
 
     count = 0;
     if (n == -2147483648)
-        return (ft_putstr("-2147483648"));
-    if (n < 0)
+    {
+        return(write(1, "-2147483648", 11));
+    }
+ if (n < 0)
     {
         n = -n;
         count += ft_putchar('-');
     }
-    if (n > 9)
+ if (n > 9)
     {
         count += ft_putnum(n / 10);
         count += ft_putnum(n % 10);

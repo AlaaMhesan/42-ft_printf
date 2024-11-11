@@ -13,7 +13,7 @@ int ft_printf(const char *str, ...)
 	{
 		if(str[i] == '%')
 		{
-			counter += ft_type(str[i++], arg);
+			counter += ft_type(str[++i], arg);
 			i++;	
 		}
 		else
@@ -26,9 +26,11 @@ int ft_printf(const char *str, ...)
 	return(counter);
 }
 
-// int	main()
-// {
-// 	int	result;
-// 	result = printf("Alaa akram almhesan");
-// 	printf("%d number of ch\n", result );
-// }
+
+int main ()
+{
+	// char q = 'w';
+    ft_printf("alaa %s almhuisen my age is %d my addrece %x", "akram", 25,3241324);
+	// printf("%d ",printf("\n alaa %s almhuisen my age is %d  ", "akram", 25));
+    return 0;
+}
